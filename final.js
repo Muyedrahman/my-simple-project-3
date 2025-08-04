@@ -4,6 +4,7 @@ var area = 100;
      rahimOrKarim = area / 2 ;
 console.log(rahimOrKarim);
 
+
 /** Problem -02 ( Cycle or Laptop ) */
 var money = 10000;
 //write your code here
@@ -14,8 +15,9 @@ else if (money >= 10000){
     console.log('Cycle');
 }
 else{
-    console.log("Chocolate ");
+    console.log("Chocolate");
 }
+
 
 /** Problem -03 ( Medicine Planner ) */
 var lastDay = 11 ;
@@ -50,3 +52,31 @@ if (fileName[0] === '#' || end4 === '.pdf' || end5 === '.docx' ){
 else {
     console.log("Delete");
 }
+
+
+/** Problem 05 - ( PH Email Generator )  */
+
+var student= { 
+    name: "jhankar" ,
+     roll: 1014 ,
+     department: "cse"
+       };
+//  name: "monu" , roll: 99,department: "eee"
+//write your code here
+// name |roll|.  |department  |@ph.ac.bd  |
+
+// var part1 = student.name.slice(0, 6).toLowerCase()
+var email = student.name+ student.roll+"."+student.department+'@ph.ac.bd'
+console.log(email)
+
+/** Problem 06 :  (Current Salary )  */
+var experience = 30;
+var startingSalary = 45000;
+//write your code here
+
+  recentSalary = startingSalary ;
+  for (var i = 1; i <= experience; i++ ){
+     recentSalary = recentSalary * 1.05 ;
+  }
+
+console.log(recentSalary.toFixed(2));
